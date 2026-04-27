@@ -205,7 +205,10 @@
       border-radius: 20px;
       overflow: hidden;
       box-shadow: var(--palette-card-shadow);
-      aspect-ratio: 4/3;
+      aspect-ratio: 16/9;
+      max-width: 680px;
+      width: 100%;
+      border: 3px solid var(--palette-border);
     }
     .hero-card img {
       width: 100%;
@@ -669,7 +672,7 @@
       .hero { padding: 48px 0 36px; }
       .hero h1 { font-size: 2.1rem; }
       .stats-grid, .grid-2, .grid-3, .grid-4, .services-grid, .footer-grid { grid-template-columns: 1fr; }
-      .hero-card { display: none; }
+      .hero-card { max-width: 100%; border-width: 2px; }
       .section { padding: 48px 0; }
     }
   </style>
@@ -711,10 +714,10 @@
       </div>
       <div>
         <div class="hero-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/2014_Mini_Cooper_S_Countryman_ALL4_in_Blazing_Red_Metallic%2C_Front_Left%2C_06-15-2023.jpg" alt="2013 Red Mini Countryman" loading="eager">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/MINI_F56_Hatch_Cooper_Blazing_Red_%284%29.jpg" alt="2013 Red Mini Cooper 2-Door" loading="eager">
           <div class="hero-card-overlay">
             <div class="hero-card-tag">Operator-Led</div>
-            <div class="hero-card-title">2013 Red Mini Countryman. Ready for Turo.</div>
+            <div class="hero-card-title">2013 Red Mini Cooper. Ready for Turo.</div>
           </div>
         </div>
       </div>
