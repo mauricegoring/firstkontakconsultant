@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FirstKontak — Operator-Led Turo Launch & Consulting</title>
+  <meta name="description" content="FirstKontak helps qualified clients source, prepare, launch, and co-host vehicles on Turo. Structured entry, disciplined execution, no hype.">
+  <link rel="canonical" href="https://firstkontakconsultant.com/">
+  <meta property="og:title" content="FirstKontak — Operator-Led Turo Launch & Consulting">
+  <meta property="og:description" content="Structured Turo vehicle launch and co-hosting for qualified clients who want a cleaner, operator-led path into the business.">
+  <meta property="og:url" content="https://firstkontakconsultant.com/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Airbnb palette adapted for FirstKontak */
+      --palette-bg: #ffffff;
+      --palette-text: #222222;
+      --palette-text-secondary: #6a6a6a;
+      --palette-text-muted: #929292;
+      --palette-accent: #ff385c;
+      --palette-accent-dark: #e00b41;
+      --palette-surface: #f7f7f7;
+      --palette-surface-alt: #f2f2f2;
+      --palette-border: #dddddd;
+      --palette-card-shadow: rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px;
+      --palette-hover-shadow: rgba(0,0,0,0.08) 0px 4px 12px;
+      --palette-luxe: #460479;
+      --palette-plus: #92174d;
+      --palette-legal: #428bff;
+      --palette-ok: #008a05;
+      --palette-warn: #c13515;
+      /* FirstKontak brand extensions */
+      --fk-gold: #c79c45;
+      --fk-gold-soft: #edd8a6;
+      --fk-navy: #1a1f2e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      color: var(--palette-text);
+      background: var(--palette-bg);
+      line-height: 1.43;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ── Layout ── */
+    .container { max-width: 1128px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Header ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--palette-border);
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--palette-text);
+      display: grid;
+      place-items: center;
+      font: 700 1.1rem/1 'DM Sans', sans-serif;
+      color: #fff;
+      letter-spacing: 0.02em;
+    }
+    .brand-name {
+      font: 700 1.15rem/1.2 'DM Sans', sans-serif;
+      letter-spacing: -0.01em;
+    }
+    .brand-tagline {
+      font: 500 0.72rem/1.3 'DM Sans', sans-serif;
+      color: var(--palette-text-secondary);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    nav { display: flex; gap: 8px; align-items: center; }
+    nav a {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font: 500 0.88rem/1.25 'DM Sans', sans-serif;
+      color: var(--palette-text);
+      transition: background 0.15s;
+    }
+    nav a:hover { background: var(--palette-surface-alt); }
+    .btn-accent {
+      background: var(--palette-accent) !important;
+      color: #fff !important;
+      padding: 10px 20px !important;
+      border-radius: 8px !important;
+      font-weight: 600 !important;
+      transition: background 0.15s, transform 0.15s !important;
+    }
+    .btn-accent:hover {
+      background: var(--palette-accent-dark) !important;
+      transform: translateY(-1px);
+    }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 80px 0 60px;
+      background: linear-gradient(135deg, #f7f7f7 0%, #fff 50%, #faf5ee 100%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero h1 {
+      font: 700 clamp(2.5rem, 5vw, 3.75rem)/1.05 'DM Sans', sans-serif;
+      letter-spacing: -0.02em;
+      margin: 0 0 20px;
+      color: var(--palette-text);
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--palette-accent);
+    }
+    .hero-desc {
+      font: 400 1.12rem/1.5 'DM Sans', sans-serif;
+      color: var(--palette-text-secondary);
+      margin: 0 0 28px;
+      max-width: 52ch;
+    }
+    .hero-pill {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--palette-surface);
+      border: 1px solid var(--palette-border);
+      font: 600 0.75rem/1 'DM Sans', sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--palette-text-secondary);
+      margin-bottom: 16px;
+    }
+    .hero-cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .btn-dark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border-radius: 8px;
+      background: var(--palette-text);
+      color: #fff;
+      font: 600 1rem/1 'DM Sans', sans-serif;
+      transition: background 0.15s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-dark:hover { background: #000; transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border-radius: 8px;
+      background: #fff;
+      color: var(--palette-text);
+      font: 600 1rem/1 'DM Sans', sans-serif;
+      border: 1px solid var(--palette-border);
+      transition: box-shadow 0.15s, transform 0.15s;
+      cursor: pointer;
+    }
+    .btn-outline:hover { box-shadow: var(--palette-hover-shadow); transform: translateY(-1px); }
+    .micro-trust {
+      font: 400 0.85rem/1.5 'DM Sans', sans-serif;
+      color: var(--palette-text-muted);
+    }
+    .micro-trust span { margin: 0 6px; color: var(--palette-border); }
+
+    /* Hero image card */
+    .hero-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--palette-card-shadow);
+      aspect-ratio: 4/3;
+    }
+    .hero-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-card-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: #fff;
+    }
+    .hero-card-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      font: 600 0.72rem/1 'DM Sans', sans-serif;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .hero-card-title {
+      font: 700 1.15rem/1.2 'DM Sans', sans-serif;
+    }
+
+    /* ── Stats Band ── */
+    .stats-band {
+      background: var(--fk-navy);
+      padding: 48px 0;
+      color: #fff;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    .stat-item strong {
+      display: block;
+      font: 700 2.2rem/1 'DM Sans', sans-serif;
+      color: var(--fk-gold-soft);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .stat-item span {
+      font: 400 0.92rem/1.3 'DM Sans', sans-serif;
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* ── Sections ── */
+    .section {
+      padding: 72px 0;
+    }
+    .section + .section { border-top: 1px solid var(--palette-border); }
+    .section-kicker {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--palette-surface);
+      border: 1px solid var(--palette-border);
+      font: 600 0.75rem/1 'DM Sans', sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--palette-text-secondary);
+      margin-bottom: 16px;
+    }
+    .section-head { max-width: 640px; margin-bottom: 36px; }
+    .section-head h2 {
+      font: 700 clamp(1.75rem, 3vw, 2.25rem)/1.1 'DM Sans', sans-serif;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+    }
+    .section-head p {
+      font: 400 1rem/1.5 'DM Sans', sans-serif;
+      color: var(--palette-text-secondary);
+      margin: 0;
+    }
+
+    /* ── Cards ── */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--palette-card-shadow);
+      padding: 28px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      box-shadow: var(--palette-hover-shadow);
+      transform: translateY(-2px);
+    }
+    .card h3 {
+      font: 600 1.25rem/1.18 'DM Sans', sans-serif;
+      letter-spacing: -0.01em;
+      margin: 0 0 12px;
+    }
+    .card p, .card li { color: var(--palette-text-secondary); font-size: 0.95rem; }
+    .card ul, .card ol { margin: 0; padding-left: 20px; }
+    .card li { margin: 8px 0; }
+
+    /* Step cards */
+    .step-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--palette-surface);
+      font: 700 1.1rem/1 'DM Sans', sans-serif;
+      color: var(--palette-accent);
+      margin-bottom: 16px;
+    }
+
+    /* Fit / Not-a-fit cards */
+    .fit-label {
+      font: 700 0.72rem/1 'DM Sans', sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--palette-border);
+    }
+    .fit-good .fit-label { color: var(--palette-ok); border-color: var(--palette-ok); }
+    .fit-bad .fit-label { color: var(--palette-warn); border-color: var(--palette-warn); }
+    .fit-good li::marker { color: var(--palette-ok); }
+    .fit-bad li::marker { color: var(--palette-warn); }
+
+    /* ── Services Suite ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--palette-card-shadow);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .service-card:hover {
+      box-shadow: var(--palette-hover-shadow);
+      transform: translateY(-2px);
+    }
+    .service-card-img {
+      height: 180px;
+      background: var(--palette-surface);
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+    }
+    .service-card-body { padding: 24px; }
+    .service-card-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font: 600 0.7rem/1 'DM Sans', sans-serif;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .badge-primary { background: rgba(255,56,92,0.1); color: var(--palette-accent); }
+    .badge-academy { background: rgba(199,156,69,0.15); color: #8b6914; }
+    .badge-consulting { background: rgba(70,4,121,0.1); color: var(--palette-luxe); }
+    .service-card-body h3 {
+      font: 600 1.15rem/1.2 'DM Sans', sans-serif;
+      margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+    .service-card-body p {
+      font: 400 0.92rem/1.45 'DM Sans', sans-serif;
+      color: var(--palette-text-secondary);
+      margin: 0 0 14px;
+    }
+    .service-card-link {
+      font: 600 0.88rem/1 'DM Sans', sans-serif;
+      color: var(--palette-accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .service-card-link:hover { text-decoration: underline; }
+
+    /* ── Why FirstKontak ── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .founder-card {
+      background: var(--fk-navy);
+      border-radius: 20px;
+      padding: 36px;
+      color: #fff;
+      grid-row: span 2;
+    }
+    .founder-card .founder-label {
+      font: 700 0.72rem/1 'DM Sans', sans-serif;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--fk-gold-soft);
+      margin-bottom: 10px;
+    }
+    .founder-card .founder-name {
+      font: 700 1.65rem/1.05 'DM Sans', sans-serif;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+    .founder-card .founder-bio {
+      font: 400 0.95rem/1.55 'DM Sans', sans-serif;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 24px;
+    }
+    .founder-point {
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .founder-point strong {
+      display: block;
+      color: var(--fk-gold-soft);
+      font: 600 0.95rem/1.3 'DM Sans', sans-serif;
+      margin-bottom: 4px;
+    }
+    .founder-point span {
+      font: 400 0.88rem/1.45 'DM Sans', sans-serif;
+      color: rgba(255,255,255,0.55);
+    }
+
+    /* ── Commitment section ── */
+    .commitment-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+    }
+    .callout-card {
+      background: linear-gradient(135deg, #fff8f0 0%, #fff 100%);
+      border: 1px solid rgba(199,156,69,0.2);
+      border-radius: 20px;
+      padding: 28px;
+    }
+    .callout-card strong {
+      display: block;
+      font: 600 1rem/1.2 'DM Sans', sans-serif;
+      color: var(--fk-gold);
+      margin-bottom: 10px;
+    }
+    .callout-card p {
+      font: 400 0.92rem/1.5 'DM Sans', sans-serif;
+      color: var(--palette-text-secondary);
+    }
+
+    /* ── FAQ ── */
+    .faq-item {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--palette-card-shadow);
+      padding: 24px 28px;
+      cursor: pointer;
+      transition: box-shadow 0.15s;
+    }
+    .faq-item:hover { box-shadow: var(--palette-hover-shadow); }
+    .faq-item h3 {
+      font: 600 1.05rem/1.3 'DM Sans', sans-serif;
+      margin: 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-item h3::after { content: '+'; font-size: 1.3rem; font-weight: 400; color: var(--palette-text-muted); transition: transform 0.2s; }
+    .faq-item.open h3::after { content: '−'; }
+    .faq-answer {
+      display: none;
+      font: 400 0.95rem/1.55 'DM Sans', sans-serif;
+      color: var(--palette-text-secondary);
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--palette-border);
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ── CTA / Apply ── */
+    .cta-section {
+      background: var(--fk-navy);
+      padding: 72px 0;
+      color: #fff;
+    }
+    .cta-section h2 {
+      font: 700 clamp(1.75rem, 3vw, 2.25rem)/1.1 'DM Sans', sans-serif;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+    }
+    .cta-section p {
+      font: 400 1rem/1.5 'DM Sans', sans-serif;
+      color: rgba(255,255,255,0.6);
+      margin: 0 0 32px;
+      max-width: 55ch;
+    }
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .form-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 32px;
+    }
+    .form-card h3 {
+      font: 600 1.15rem/1.2 'DM Sans', sans-serif;
+      color: #fff;
+      margin: 0 0 4px;
+    }
+    .form-card .form-sub {
+      font: 400 0.85rem/1.3 'DM Sans', sans-serif;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 20px;
+    }
+    .form-card form { display: grid; gap: 12px; }
+    .form-card input, .form-card textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font: 400 0.95rem/1.4 'DM Sans', sans-serif;
+      transition: border-color 0.15s;
+    }
+    .form-card input::placeholder, .form-card textarea::placeholder {
+      color: rgba(255,255,255,0.35);
+    }
+    .form-card input:focus, .form-card textarea:focus {
+      outline: none;
+      border-color: var(--palette-accent);
+    }
+    .form-card textarea { min-height: 100px; resize: vertical; }
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border-radius: 8px;
+      background: linear-gradient(180deg, #f3e3b7 0%, #e7cd8c 42%, var(--fk-gold) 100%);
+      color: #1e1709;
+      font: 700 1rem/1 'DM Sans', sans-serif;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+    .btn-gold:hover { transform: translateY(-1px); }
+    .form-tiny {
+      font: 400 0.8rem/1.4 'DM Sans', sans-serif;
+      color: rgba(255,255,255,0.35);
+      margin-top: 12px;
+    }
+    .form-ok {
+      display: none;
+      color: var(--palette-ok);
+      font: 600 0.92rem/1.4 'DM Sans', sans-serif;
+      margin-top: 8px;
+    }
+    .next-steps-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 32px;
+    }
+    .next-steps-card h3 {
+      font: 600 1.15rem/1.2 'DM Sans', sans-serif;
+      color: #fff;
+      margin: 0 0 16px;
+    }
+    .next-steps-card ol {
+      margin: 0;
+      padding-left: 20px;
+      color: rgba(255,255,255,0.6);
+      font: 400 0.95rem/1.8 'DM Sans', sans-serif;
+    }
+    .next-steps-card .email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #fff;
+      font: 600 0.88rem/1 'DM Sans', sans-serif;
+      transition: background 0.15s;
+    }
+    .next-steps-card .email-link:hover { background: rgba(255,255,255,0.14); }
+
+    /* ── Footer ── */
+    footer {
+      padding: 36px 0;
+      border-top: 1px solid var(--palette-border);
+      margin-top: 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+    .footer-brand p {
+      font: 400 0.9rem/1.5 'DM Sans', sans-serif;
+      color: var(--palette-text-secondary);
+      margin: 12px 0 0;
+      max-width: 32ch;
+    }
+    .footer-col h4 {
+      font: 600 0.85rem/1 'DM Sans', sans-serif;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--palette-text-muted);
+      margin: 0 0 14px;
+    }
+    .footer-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .footer-col li { margin: 8px 0; }
+    .footer-col a {
+      font: 400 0.9rem/1 'DM Sans', sans-serif;
+      color: var(--palette-text-secondary);
+      transition: color 0.15s;
+    }
+    .footer-col a:hover { color: var(--palette-text); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      border-top: 1px solid var(--palette-border);
+      font: 400 0.82rem/1 'DM Sans', sans-serif;
+      color: var(--palette-text-muted);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 980px) {
+      .hero-grid, .why-grid, .commitment-grid, .cta-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .grid-3, .services-grid { grid-template-columns: 1fr 1fr; }
+      .grid-4 { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      nav a:not(.btn-accent) { display: none; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 48px 0 36px; }
+      .hero h1 { font-size: 2.1rem; }
+      .stats-grid, .grid-2, .grid-3, .grid-4, .services-grid, .footer-grid { grid-template-columns: 1fr; }
+      .hero-card { display: none; }
+      .section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="brand-lockup">
+        <div class="brand-mark">FK</div>
+        <div>
+          <div class="brand-name">FirstKontak</div>
+          <div class="brand-tagline">Operator-Led Turo Launch</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#services">Services</a>
+        <a href="#fit">Who It's For</a>
+        <a href="#faq">FAQ</a>
+        <a href="#apply" class="btn-accent">Book a Fit Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-pill">Turo Vehicle Launch & Co-Hosting</div>
+        <h1>Get into Turo with a <em>real structure</em> behind you.</h1>
+        <p class="hero-desc">FirstKontak helps qualified clients source, prepare, launch, and co-host a vehicle on Turo — through a structured, operator-led model designed to reduce guesswork and improve execution.</p>
+        <div class="hero-cta-row">
+          <a href="#apply" class="btn-dark">Request the Overview</a>
+          <a href="mailto:info@firstkontakconsultant.com" class="btn-outline">Email First</a>
+        </div>
+        <div class="micro-trust">Structured onboarding <span>•</span> 3-year model <span>•</span> No guaranteed returns <span>•</span> Fit-first</div>
+      </div>
+      <div>
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80" alt="Luxury vehicle" loading="eager">
+          <div class="hero-card-overlay">
+            <div class="hero-card-tag">Operator-Led</div>
+            <div class="hero-card-title">One vehicle. Real execution.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="stat-item"><strong>$10K</strong><span>Launch commitment per vehicle</span></div>
+      <div class="stat-item"><strong>3 Years</strong><span>Initial operating model term</span></div>
+      <div class="stat-item"><strong>1 Vehicle</strong><span>Start with one — scale from proof</span></div>
+      <div class="stat-item"><strong>Qualified</strong><span>Built for fit, not everyone</span></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-kicker">Our Services</div>
+      <div class="section-head">
+        <h2>More than a launch. A full operating partner.</h2>
+        <p>FirstKontak operates across three verticals — each built around the same principle: structured execution beats DIY chaos.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card-img" style="background:linear-gradient(135deg,#fff5f5,#fff)">
+            <svg width="48" height="48" fill="none" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.5-5A2 2 0 0013.7 4h-3.4a2 2 0 00-1.8 1L6 10l-2.5 1.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2m4 0h6m-6 0a2 2 0 11-4 0m4 0a2 2 0 104 0m2 0a2 2 0 11-4 0m4 0a2 2 0 104 0" stroke="#ff385c" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-badge badge-primary">Core Offer</div>
+            <h3>Turo Vehicle Launch & Co-Hosting</h3>
+            <p>Structured done-with-you entry: sourcing, setup, listing, launch, and ongoing co-hosting under a formal operating model.</p>
+            <a href="#how-it-works" class="service-card-link">Learn how it works →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img" style="background:linear-gradient(135deg,#fef9f0,#fff)">
+            <svg width="48" height="48" fill="none" viewBox="0 0 24 24"><path d="M12 6.25v11.5m0-11.5c-2.5-1.5-5.5-2-8-1m8 1c2.5-1.5 5.5-2 8-1M4 8v10c2.5-1 5.5-.5 8 1m0-1c2.5-1.5 5.5-2 8-1V8" stroke="#c79c45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-badge badge-academy">Academy</div>
+            <h3>Turo Host Academy</h3>
+            <p>Tools, templates, and playbooks for independent Turo hosts — claim kits, guest vetting systems, compliance trackers, and more.</p>
+            <a href="https://turohostacademy.com" class="service-card-link" target="_blank">Visit the Academy →</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img" style="background:linear-gradient(135deg,#f5f0ff,#fff)">
+            <svg width="48" height="48" fill="none" viewBox="0 0 24 24"><path d="M9 12h6m-3-3v6m-7 4h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="#460479" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="service-card-body">
+            <div class="service-card-badge badge-consulting">Consulting</div>
+            <h3>Strategic Advisory</h3>
+            <p>One-on-one consulting for fleet operators, investors, and new entrants who want operational clarity before committing capital.</p>
+            <a href="#apply" class="service-card-link">Book an advisory call →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" id="how-it-works" style="background:var(--palette-surface)">
+    <div class="container">
+      <div class="section-kicker">How It Works</div>
+      <div class="section-head">
+        <h2>A simple 4-step path from interest to launched vehicle.</h2>
+        <p>The point isn't to make Turo look easy. It's to make entry cleaner, more structured, and less wasteful.</p>
+      </div>
+      <div class="grid-4">
+        <div class="card">
+          <div class="step-icon">1</div>
+          <h3>Fit call & model review</h3>
+          <p>We review your goals, budget, timeline, and what level of involvement makes sense before anything moves forward.</p>
+        </div>
+        <div class="card">
+          <div class="step-icon">2</div>
+          <h3>Vehicle & launch planning</h3>
+          <p>Sourcing direction, launch planning, listing readiness, and positioning for the target market.</p>
+        </div>
+        <div class="card">
+          <div class="step-icon">3</div>
+          <h3>Setup & co-hosting structure</h3>
+          <p>Operating structure in place — the asset is prepared for guest use and ongoing execution.</p>
+        </div>
+        <div class="card">
+          <div class="step-icon">4</div>
+          <h3>Operate, review, decide</h3>
+          <p>Performance managed under agreement, then reviewed with discipline before any expansion conversation happens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commitment -->
+  <section class="section">
+    <div class="container">
+      <div class="section-kicker">What The Commitment Covers</div>
+      <div class="section-head">
+        <h2>What the $10,000 launch commitment is actually for.</h2>
+        <p>A launch commitment for entering the FirstKontak model — not a promise of profit and not a vague consulting retainer.</p>
+      </div>
+      <div class="commitment-grid">
+        <div class="card">
+          <h3>Included in the launch process</h3>
+          <ul>
+            <li>Vehicle sourcing support and fit guidance</li>
+            <li>Launch planning from acquisition to listing readiness</li>
+            <li>Guest-facing readiness and setup standards</li>
+            <li>Positioning and listing support for market entry</li>
+            <li>Structured onboarding into the co-hosting model</li>
+          </ul>
+        </div>
+        <div class="callout-card">
+          <strong>Important</strong>
+          <p>The $10,000 is not a guarantee of returns or a promise of passive income. Final scope, responsibilities, economics, and ownership structure are defined before launch in the operating agreement.</p>
+          <p style="font-size:0.85rem;color:var(--palette-text-muted);margin-top:12px">In plain English: this is a serious, structured launch process — not a hype offer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="section" id="fit" style="background:var(--palette-surface)">
+    <div class="container">
+      <div class="section-kicker">Who It's For</div>
+      <div class="section-head">
+        <h2>Built for people who want structured entry — not DIY chaos.</h2>
+      </div>
+      <div class="grid-2">
+        <article class="card fit-good">
+          <div class="fit-label">Good fit if you:</div>
+          <ul>
+            <li>Want exposure to Turo without building every system alone</li>
+            <li>Have capital for a serious vehicle launch</li>
+            <li>Care more about clean execution than hype</li>
+            <li>Want to start with one vehicle before scaling</li>
+            <li>Are comfortable operating under a formal agreement</li>
+          </ul>
+        </article>
+        <article class="card fit-bad">
+          <div class="fit-label">Not a fit if you:</div>
+          <ul>
+            <li>Want guaranteed returns</li>
+            <li>Expect passive income with zero variability</li>
+            <li>Want to skip operating structure and discipline</li>
+            <li>Are looking for shortcuts instead of process</li>
+            <li>Are not ready for a real launch commitment</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why FirstKontak -->
+  <section class="section">
+    <div class="container">
+      <div class="section-kicker">Why FirstKontak</div>
+      <div class="section-head">
+        <h2>The asset matters — but the setup matters more.</h2>
+        <p>Most first-time entrants spend too much time on the vehicle and not enough on launch quality, operating systems, and accountability.</p>
+      </div>
+      <div class="why-grid">
+        <div class="founder-card">
+          <div class="founder-label">Operator-Led</div>
+          <div class="founder-name">Maurice Goring</div>
+          <p class="founder-bio">FirstKontak Consultant is an operator-led launch and co-hosting offer built around structured entry, disciplined setup, and fit-first onboarding.</p>
+          <div class="founder-point">
+            <strong>Launch before scale.</strong>
+            <span>Prove the process on one vehicle before trying to turn it into a fleet story.</span>
+          </div>
+          <div class="founder-point">
+            <strong>Operational seriousness.</strong>
+            <span>Sourcing, readiness, listing quality, maintenance discipline, and guest-facing execution are treated as core.</span>
+          </div>
+          <div class="founder-point">
+            <strong>Fit over pressure.</strong>
+            <span>Work with qualified clients who want a structured way into Turo — not push everyone through a sales funnel.</span>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="margin-bottom:20px">
+            <h3>Operator-led</h3>
+            <p>Built around real-world launch execution, not theory, course content, or generic consulting talk.</p>
+          </div>
+          <div class="card" style="margin-bottom:20px">
+            <h3>One-vehicle-first</h3>
+            <p>The discipline is deliberate: start with one asset, test the operating model, then decide whether scale makes sense.</p>
+          </div>
+          <div class="card">
+            <h3>Clarity over hype</h3>
+            <p>Fit, assumptions, and execution come first. If the model is not a fit, the answer should be no.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" style="background:var(--palette-surface)">
+    <div class="container">
+      <div class="section-kicker">FAQ</div>
+      <div class="section-head">
+        <h2>Important questions, answered clearly.</h2>
+      </div>
+      <div class="grid-1" style="display:grid;gap:12px;max-width:720px">
+        <article class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>What does the $10,000 cover?</h3>
+          <div class="faq-answer">It supports the structured launch process: sourcing support, planning, readiness, listing support, and onboarding into the operating model. Final details are defined in the agreement.</div>
+        </article>
+        <article class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>Are returns guaranteed?</h3>
+          <div class="faq-answer">No. Performance depends on market conditions, vehicle choice, utilization, seasonality, pricing, and execution.</div>
+        </article>
+        <article class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>Do I have to operate the vehicle myself?</h3>
+          <div class="faq-answer">The model is designed for people who want a more managed entry into Turo rather than building every operating piece themselves.</div>
+        </article>
+        <article class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>How long is the arrangement?</h3>
+          <div class="faq-answer">The initial structure is built around a 3-year operating model, with final scope, responsibilities, and economics defined in the agreement.</div>
+        </article>
+        <article class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>Can I start with one vehicle and scale later?</h3>
+          <div class="faq-answer">Yes — but only if the first vehicle proves the economics and operating structure are worth repeating.</div>
+        </article>
+        <article class="faq-item" onclick="this.classList.toggle('open')">
+          <h3>Who owns the vehicle?</h3>
+          <div class="faq-answer">Ownership, responsibilities, and economics depend on the final structure and are defined explicitly before launch.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply / CTA -->
+  <section class="cta-section" id="apply">
+    <div class="container">
+      <div class="section-kicker" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.5)">Next Step</div>
+      <h2>Book a fit call or request the overview.</h2>
+      <p>If the model looks like a fit for your capital, timeline, and goals, we'll walk you through the structure, assumptions, and next steps. If it's not a fit, we'll tell you plainly.</p>
+      <div class="cta-grid">
+        <article class="form-card">
+          <h3>Request the overview</h3>
+          <p class="form-sub">Tell us a little about what you're considering.</p>
+          <form id="contactForm">
+            <input name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input name="fleet" placeholder="How many vehicles are you considering?">
+            <input name="timeline" placeholder="What's your timeline?">
+            <textarea name="message" placeholder="What interests you most about this model?" required></textarea>
+            <button type="submit" class="btn-gold">Request Overview</button>
+            <div class="form-ok" id="okMsg">Thanks — inquiry received. We'll reply shortly.</div>
+          </form>
+          <p class="form-tiny">Final structure, responsibilities, and distributions are governed by the operating agreement.</p>
+        </article>
+        <article class="next-steps-card">
+          <h3>What happens next</h3>
+          <ol>
+            <li>We review whether the model looks like a fit.</li>
+            <li>We share the overview or book a short fit call.</li>
+            <li>We walk through structure, assumptions, and expectations.</li>
+            <li>We decide whether to move forward under a formal agreement.</li>
+          </ol>
+          <a href="mailto:info@firstkontakconsultant.com" class="email-link">✉ Email Instead</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-lockup">
+            <div class="brand-mark">FK</div>
+            <div>
+              <div class="brand-name">FirstKontak</div>
+              <div class="brand-tagline">Operator-Led Turo Launch</div>
+            </div>
+          </div>
+          <p>Structured vehicle launch and co-hosting for qualified clients who want a cleaner, operator-led path into Turo.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#how-it-works">Vehicle Launch</a></li>
+            <li><a href="#how-it-works">Co-Hosting</a></li>
+            <li><a href="https://turohostacademy.com" target="_blank">Host Academy</a></li>
+            <li><a href="#apply">Strategic Advisory</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#fit">Who It's For</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#apply">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:info@firstkontakconsultant.com">Email</a></li>
+            <li><a href="https://turohostacademy.com" target="_blank">Turo Host Academy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="y"></span> FirstKontak Consultant Inc.</span>
+        <span>Operator-led by Maurice Goring</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const f = e.target;
+      const btn = f.querySelector('button[type="submit"]');
+      const ok = document.getElementById('okMsg');
+      ok.style.display = 'none';
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      try {
+        const payload = {
+          name: f.name.value || '',
+          email: f.email.value || '',
+          fleet: f.fleet.value || '',
+          timeline: f.timeline.value || '',
+          message: f.message.value || ''
+        };
+        const r = await fetch('/api/lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!r.ok) throw new Error('Request failed');
+        ok.style.display = 'block';
+        f.reset();
+      } catch (err) {
+        ok.textContent = 'Submission failed. Please email info@firstkontakconsultant.com.';
+        ok.style.color = 'var(--palette-warn)';
+        ok.style.display = 'block';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Request Overview';
+      }
+    });
+  </script>
+</body>
+</html>
